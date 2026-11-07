@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-11-07 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "update_id",
+  "direction",
+  "message_type",
+  "status",
+  "event_time",
+  "section_break_source",
+  "bot",
+  "chat_id",
+  "chat_title",
+  "sender_id",
+  "sender_username",
+  "sender_name",
+  "telegram_user",
+  "section_break_content",
+  "command",
+  "text",
+  "section_break_result",
+  "result",
+  "error"
+ ],
+ "fields": [
+  {
+   "description": "Telegram update_id. Unique to deduplicate re-delivered updates.",
+   "fieldname": "update_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Update ID",
+   "unique": 1
+  },
+  {
+   "default": "Inbound",
+   "fieldname": "direction",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Direction",
+   "options": "Inbound\nOutbound"
+  },
+  {
+   "default": "Command",
+   "fieldname": "message_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Message Type",
+   "options": "Command\nCallback\nText\nSystem\nNotification"
+  },
+  {
+   "default": "Success",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Success\nError\nIgnored\nDuplicate"
+  },
+  {
+   "fieldname": "event_time",
+   "fieldtype": "Datetime",
+   "label": "Event Time"
+  },
+  {
+   "fieldname": "section_break_source",
+   "fieldtype": "Section Break",
+   "label": "Source"
+  },
+  {
+   "fieldname": "bot",
+   "fieldtype": "Link",
+   "label": "Bot",
+   "options": "Telegram Bot"
+  },
+  {
+   "fieldname": "chat_id",
+   "fieldtype": "Data",
+   "label": "Chat ID"
+  },
+  {
+   "fieldname": "chat_title",
+   "fieldtype": "Data",
+   "label": "Chat Title"
+  },
+  {
+   "fieldname": "sender_id",
+   "fieldtype": "Data",
+   "label": "Sender ID"
+  },
+  {
+   "fieldname": "sender_username",
+   "fieldtype": "Data",
+   "label": "Sender Username"
+  },
+  {
+   "fieldname": "sender_name",
+   "fieldtype": "Data",
+   "label": "Sender Name"
+  },
+  {
+   "fieldname": "telegram_user",
+   "fieldtype": "Link",
+   "label": "Telegram User",
+   "options": "Telegram User"
+  },
+  {
+   "fieldname": "section_break_content",
+   "fieldtype": "Section Break",
+   "label": "Content"
+  },
+  {
+   "fieldname": "command",
+   "fieldtype": "Data",
+   "label": "Command"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Long Text",
+   "label": "Text"
+  },
+  {
+   "fieldname": "section_break_result",
+   "fieldtype": "Section Break",
+   "label": "Result"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Long Text",
+   "label": "Result"
+  },
+  {
+   "fieldname": "error",
+   "fieldtype": "Long Text",
+   "label": "Error"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-07 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CAF Telegram Bot",
+ "name": "Telegram Message Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 0
+}

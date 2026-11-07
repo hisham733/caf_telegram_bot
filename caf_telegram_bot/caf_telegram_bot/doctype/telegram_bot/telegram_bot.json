@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:bot_name",
+ "creation": "2026-11-07 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bot_name",
+  "username",
+  "bot_id",
+  "enabled",
+  "is_primary",
+  "section_break_credentials",
+  "token",
+  "adder_account",
+  "section_break_runtime",
+  "update_mode",
+  "polling_timeout",
+  "status",
+  "privacy_disabled",
+  "last_poll_on",
+  "column_break_runtime",
+  "last_update_id",
+  "last_error"
+ ],
+ "fields": [
+  {
+   "fieldname": "bot_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bot Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Username",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bot_id",
+   "fieldtype": "Data",
+   "label": "Bot ID",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "default": "0",
+   "description": "Primary bot used for new Task groups and notifications.",
+   "fieldname": "is_primary",
+   "fieldtype": "Check",
+   "label": "Is Primary"
+  },
+  {
+   "fieldname": "section_break_credentials",
+   "fieldtype": "Section Break",
+   "label": "Credentials"
+  },
+  {
+   "description": "Token from @BotFather. Encrypted at rest.",
+   "fieldname": "token",
+   "fieldtype": "Password",
+   "label": "Bot Token",
+   "reqd": 1
+  },
+  {
+   "description": "Optional MTProto account used to create groups and add members.",
+   "fieldname": "adder_account",
+   "fieldtype": "Link",
+   "label": "Adder Account",
+   "options": "Telegram Adder Account"
+  },
+  {
+   "fieldname": "section_break_runtime",
+   "fieldtype": "Section Break",
+   "label": "Runtime"
+  },
+  {
+   "default": "Polling",
+   "fieldname": "update_mode",
+   "fieldtype": "Select",
+   "label": "Update Mode",
+   "options": "Polling\nWebhook"
+  },
+  {
+   "default": "30",
+   "fieldname": "polling_timeout",
+   "fieldtype": "Int",
+   "label": "Polling Timeout (seconds)"
+  },
+  {
+   "default": "Unknown",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Unknown\nActive\nError",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "description": "Group privacy mode disabled through @BotFather.",
+   "fieldname": "privacy_disabled",
+   "fieldtype": "Check",
+   "label": "Privacy Disabled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_poll_on",
+   "fieldtype": "Datetime",
+   "label": "Last Poll On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_runtime",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_update_id",
+   "fieldtype": "Data",
+   "label": "Last Update ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_error",
+   "fieldtype": "Small Text",
+   "label": "Last Error",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-07 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CAF Telegram Bot",
+ "name": "Telegram Bot",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

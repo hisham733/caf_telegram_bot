@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:telegram_id",
+ "creation": "2026-11-07 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "telegram_id",
+  "username",
+  "first_name",
+  "last_name",
+  "enabled",
+  "verified",
+  "column_break_identity",
+  "erpnext_user",
+  "linked_on",
+  "last_seen_on",
+  "section_break_linking",
+  "link_code",
+  "link_code_expiry",
+  "section_break_notes",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "telegram_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Telegram ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "verified",
+   "fieldtype": "Check",
+   "label": "Verified"
+  },
+  {
+   "fieldname": "column_break_identity",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erpnext_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ERPNext User",
+   "options": "User"
+  },
+  {
+   "fieldname": "linked_on",
+   "fieldtype": "Datetime",
+   "label": "Linked On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_seen_on",
+   "fieldtype": "Datetime",
+   "label": "Last Seen On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_linking",
+   "fieldtype": "Section Break",
+   "label": "Linking"
+  },
+  {
+   "fieldname": "link_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Link Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "link_code_expiry",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Link Code Expiry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_notes",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-07 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CAF Telegram Bot",
+ "name": "Telegram User",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

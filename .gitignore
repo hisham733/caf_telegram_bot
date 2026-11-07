@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Frappe
+*.log
+.sass-cache/
+assets/
+sites/
+site_config.json
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.session
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

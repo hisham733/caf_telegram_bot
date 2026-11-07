@@ -1,0 +1,123 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"ctbHeader\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>CAF Telegram Bot</b></span>\", \"col\": 12}}, {\"id\": \"ctbShortcut1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Telegram Bot\", \"col\": 3}}, {\"id\": \"ctbShortcut2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Telegram Adder Account\", \"col\": 3}}, {\"id\": \"ctbShortcut3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Telegram User\", \"col\": 3}}, {\"id\": \"ctbShortcut4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Telegram Chat\", \"col\": 3}}, {\"id\": \"ctbShortcut5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Telegram Message Log\", \"col\": 3}}]",
+ "creation": "2026-11-07 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "send",
+ "idx": 0,
+ "indicator_color": "blue",
+ "is_hidden": 0,
+ "label": "CAF Telegram Bot",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Telegram Bot",
+   "link_count": 0,
+   "link_to": "Telegram Bot",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Telegram Adder Account",
+   "link_count": 0,
+   "link_to": "Telegram Adder Account",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Telegram User",
+   "link_count": 0,
+   "link_to": "Telegram User",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Telegram Chat",
+   "link_count": 0,
+   "link_to": "Telegram Chat",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Telegram Message Log",
+   "link_count": 0,
+   "link_to": "Telegram Message Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-11-07 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CAF Telegram Bot",
+ "name": "CAF Telegram Bot",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 20.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "Telegram Bot",
+   "link_to": "Telegram Bot",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "Telegram Adder Account",
+   "link_to": "Telegram Adder Account",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "",
+   "label": "Telegram User",
+   "link_to": "Telegram User",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "",
+   "label": "Telegram Chat",
+   "link_to": "Telegram Chat",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Telegram Message Log",
+   "link_to": "Telegram Message Log",
+   "type": "DocType"
+  }
+ ],
+ "title": "CAF Telegram Bot"
+}

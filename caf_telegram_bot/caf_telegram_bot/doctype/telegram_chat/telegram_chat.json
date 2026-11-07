@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:chat_id",
+ "creation": "2026-11-07 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "chat_id",
+  "title",
+  "chat_type",
+  "enabled",
+  "section_break_task",
+  "task",
+  "bot",
+  "section_break_provisioning",
+  "invite_link",
+  "invite_link_expiry",
+  "bot_is_admin",
+  "can_invite_users",
+  "section_break_sync",
+  "members_synced_on",
+  "last_error"
+ ],
+ "fields": [
+  {
+   "description": "Numeric Telegram chat ID. Supergroups start with -100.",
+   "fieldname": "chat_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Chat ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title"
+  },
+  {
+   "default": "supergroup",
+   "fieldname": "chat_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Chat Type",
+   "options": "supergroup\ngroup\nchannel\nprivate"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "section_break_task",
+   "fieldtype": "Section Break",
+   "label": "Linked Task"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "bot",
+   "fieldtype": "Link",
+   "label": "Bot",
+   "options": "Telegram Bot"
+  },
+  {
+   "fieldname": "section_break_provisioning",
+   "fieldtype": "Section Break",
+   "label": "Provisioning"
+  },
+  {
+   "fieldname": "invite_link",
+   "fieldtype": "Small Text",
+   "label": "Invite Link"
+  },
+  {
+   "fieldname": "invite_link_expiry",
+   "fieldtype": "Datetime",
+   "label": "Invite Link Expiry"
+  },
+  {
+   "default": "0",
+   "fieldname": "bot_is_admin",
+   "fieldtype": "Check",
+   "label": "Bot Is Admin",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "can_invite_users",
+   "fieldtype": "Check",
+   "label": "Can Invite Users",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_sync",
+   "fieldtype": "Section Break",
+   "label": "Membership Sync"
+  },
+  {
+   "fieldname": "members_synced_on",
+   "fieldtype": "Datetime",
+   "label": "Members Synced On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_error",
+   "fieldtype": "Small Text",
+   "label": "Last Error",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-07 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "CAF Telegram Bot",
+ "name": "Telegram Chat",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
